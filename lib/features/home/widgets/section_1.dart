@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:penang_sp/features/profile/profile_screen.dart';
+import 'package:penang_sp/features/profile/widgets/user_profile.dart';
 
 class Section1 extends StatelessWidget {
   const Section1({ Key? key }) : super(key: key);
@@ -30,12 +32,18 @@ class Section1 extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    CircleAvatar( 
-                      radius: 25.0,
-                      backgroundImage: 
-                        AssetImage("assets/compound.png"),
-                      backgroundColor: Colors.transparent,
-                     ),
+                    GestureDetector(
+                      onTap: () { 
+                        Navigator.push(
+                          context, MaterialPageRoute (builder: (BuildContext context) => ProfileScreen()));
+                      },
+                      child: CircleAvatar( 
+                        radius: 25.0,
+                        backgroundImage: 
+                          AssetImage("assets/compound.png"),
+                        backgroundColor: Colors.transparent,
+                       ),
+                    ),
 
                     Text('Profile')
 
