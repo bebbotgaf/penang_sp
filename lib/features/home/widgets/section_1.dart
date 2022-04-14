@@ -29,25 +29,25 @@ class Section1 extends StatelessWidget {
       
               Padding(
                 padding: const EdgeInsets.all(15.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    GestureDetector(
+                child: GestureDetector(
                       onTap: () { 
                         Navigator.push(
                           context, MaterialPageRoute (builder: (BuildContext context) => ProfileScreen()));
                       },
-                      child: CircleAvatar( 
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      CircleAvatar( 
                         radius: 25.0,
                         backgroundImage: 
                           AssetImage("assets/compound.png"),
                         backgroundColor: Colors.transparent,
                        ),
-                    ),
-
-                    Text('Profile')
-
-                  ],
+                
+                      Text('Profile')
+                
+                    ],
+                  ),
                 ),
               )
             ],      

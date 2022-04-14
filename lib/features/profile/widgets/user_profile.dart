@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:penang_sp/features/profile/ProfileRoute/about_psp_screen.dart';
 import 'package:penang_sp/features/profile/ProfileRoute/change_pin_screen.dart';
 import 'package:penang_sp/features/profile/ProfileRoute/contact_screen.dart';
 import 'package:penang_sp/features/profile/ProfileRoute/my_profile_screen.dart';
@@ -96,11 +97,11 @@ class _ProfileSectionsState extends State<ProfileSections> {
             children: [
             Text('About Penang Smart Parking', 
             style: TextStyle( fontWeight: FontWeight.bold),), 
-            //  IconButton(onPressed: (){ 
-            //    Navigator.push(context, MaterialPageRoute(builder: (context) => AboutScreen()), 
-            //    );
-            // } , 
-            // icon: Icon(Icons.arrow_forward_ios_outlined))
+             IconButton(onPressed: (){ 
+               Navigator.push(context, MaterialPageRoute(builder: (context) => AboutPSPScreen()), 
+               );
+            } , 
+            icon: Icon(Icons.arrow_forward_ios_outlined))
             ],
           ), 
           Divider(

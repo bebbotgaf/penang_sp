@@ -54,6 +54,34 @@ class DetailsContact extends StatelessWidget {
               ],
             ),
           ), 
+
+          Divider(
+            thickness: 1,
+            color: Color.fromARGB(255, 207, 206, 206)),
+
+                      Row( 
+            children: [ 
+              Icon(Icons.watch_later),
+              SizedBox(width: 10),
+              Text('Operation Hours:')
+            ],
+          ), 
+          SizedBox(height: 10),
+
+          Container(
+            margin: EdgeInsets.only(left: 35.0),
+            child: Column( 
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [ 
+                Text('(Monday - Saturday )'),
+                SizedBox(height: 5),
+                Text('8.00 am to 6.00 pm'),
+              ],
+            ),
+          ), 
+          Divider(
+            thickness: 1,
+            color: Color.fromARGB(255, 207, 206, 206)),
         ],
       ),
       

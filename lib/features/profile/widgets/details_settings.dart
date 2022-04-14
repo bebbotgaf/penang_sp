@@ -20,10 +20,7 @@ class DetailsSettings extends StatelessWidget {
                     Text('/ BM'), 
                   ],
                 ), 
-                
                 ],
-                
-                
               ),
               SizedBox(height: 20),
 
