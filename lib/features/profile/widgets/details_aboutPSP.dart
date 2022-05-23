@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class DetailsAboutPSP extends StatelessWidget {
-  const DetailsAboutPSP({ Key? key }) : super(key: key);
+class AboutPSP extends StatelessWidget {
+  const AboutPSP({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -46,9 +46,7 @@ class DetailsAboutPSP extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
-                         Text('The app provides two options of language which can' ),
-                         SizedBox(height: 5),
-                         Text('be set through menu: Profile > Language Setting' ),
+                         Text('The app provides two options of language which can\nbe set through menu: Profile > Language Setting' ),
                       ],
                     ),
                   ),
@@ -78,9 +76,7 @@ class DetailsAboutPSP extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
-                        Text('User can change the eight digit PIN number anytime.' ),
-                        SizedBox(height: 5),
-                        Text('To change the number: Profile > Change PIN Number ' ),
+                        Text('User can change the eight digit PIN number anytime.\nTo change the number: Profile > Change PIN Number ' ),
                       ],
                     ),
                   ),
@@ -109,11 +105,7 @@ class DetailsAboutPSP extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
-                        Text('PIN Login is set as optional. It can be set enable' ),
-                        SizedBox(height: 5),
-                        Text('or disable by setting. To change the setting: Setting > ' ),
-                        SizedBox(height: 5),
-                        Text('Enable or disable PIN' ),
+                        Text('PIN Login is set as optional. It can be set enable\nor disable by setting. To change the setting: Setting >\nEnable or disable PIN' ),
                       ],
                     ),
                   ),
@@ -137,11 +129,7 @@ class DetailsAboutPSP extends StatelessWidget {
               padding: const EdgeInsets.only(left: 15.0),
               child: Column( crossAxisAlignment: CrossAxisAlignment.start,
                 children: const [
-                  Text('Parking Receipt will be sent to the registered email'),
-                  SizedBox(height: 5),
-                  Text('addrress. To get a receipt: History > TAP on the date' ),
-                  SizedBox(height: 5),
-                  Text('of the parking transaction.' ),
+                  Text('Parking Receipt will be sent to the registered email\naddrress. To get a receipt: History > TAP on the date\nof the parking transaction.'),
                 ],
               ),
             ), 

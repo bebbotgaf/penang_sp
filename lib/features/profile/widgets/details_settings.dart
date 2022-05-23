@@ -26,8 +26,8 @@ class DetailsSettings extends StatelessWidget {
 
               Row( 
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                const Text('Enable PIN (Login Option)', 
+                children: const [
+                  Text('Enable PIN (Login Option)', 
                 style: TextStyle( fontWeight: FontWeight.bold),),
                 SwitchScreen(), 
                 ],

@@ -37,7 +37,7 @@ class BirthPhoneIC extends StatelessWidget {
                   border: Border.all( color: Colors.black)
                 ),
                   child: Padding(
-                    padding: EdgeInsets.all(3.0),
+                    padding: const EdgeInsets.all(3.0),
                     child: Text(dateofbirth),
                   ),
                 ),
@@ -59,7 +59,7 @@ class BirthPhoneIC extends StatelessWidget {
                   border: Border.all( color: Colors.black)
                 ),
                   child: Padding(
-                    padding: EdgeInsets.all(3.0),
+                    padding: const EdgeInsets.all(3.0),
                     child: Text(phonenumber),
                   ),
                 ),
@@ -81,7 +81,7 @@ class BirthPhoneIC extends StatelessWidget {
                   border: Border.all( color: Colors.black)
                 ),
                   child: Padding(
-                    padding: EdgeInsets.all(3.0),
+                    padding: const EdgeInsets.all(3.0),
                     child: Text(IDnumber),
                   ),
                 ),
@@ -91,7 +91,8 @@ class BirthPhoneIC extends StatelessWidget {
           const SizedBox(height: 20),
 
           const Center(
-            child: Text('Please contact customer support if you wish to\n change your Date of Birth information', textAlign: TextAlign.center,
+            child: Text('Please contact customer support if you wish to\n change your Date of Birth information', 
+            textAlign: TextAlign.center,
             style: TextStyle(
             ),),
           ),

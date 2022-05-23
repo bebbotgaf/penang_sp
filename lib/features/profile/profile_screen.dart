@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:penang_sp/features/profile/ProfileRoute/about_psp_screen.dart';
 import 'package:penang_sp/features/profile/ProfileRoute/change_pin_screen.dart';
 import 'package:penang_sp/features/profile/ProfileRoute/contact_screen.dart';
-import 'package:penang_sp/features/profile/ProfileRoute/my_profile_screen.dart';
+import 'package:penang_sp/features/profile/ProfileRoute/my_profile_details.dart';
 import 'package:penang_sp/features/profile/ProfileRoute/settings_screen.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -14,35 +14,35 @@ class ProfileScreen extends StatelessWidget {
       'id': 0,
       'title': 'Profile',
       'trailing': IconButton(icon: const Icon(Icons.arrow_forward_ios_outlined), onPressed: () {
-         Navigator.push(context, MaterialPageRoute (builder: (context) => ProfileDetails()));
+         Navigator.push(context, MaterialPageRoute (builder: (context) => const ProfileDetails()));
       }),
     },
     {
       'id': 1,
       'title': 'Change PIN',
       'trailing': IconButton(icon: const Icon(Icons.arrow_forward_ios_outlined), onPressed: () {
-         Navigator.push(context, MaterialPageRoute (builder: (context) =>  ChangePINScreen()));
+         Navigator.push(context, MaterialPageRoute (builder: (context) => const ChangePINScreen()));
       }),
     },
     {
       'id': 2,
       'title': 'Settings',
       'trailing': IconButton(icon: const Icon(Icons.arrow_forward_ios_outlined), onPressed: () {
-         Navigator.push(context, MaterialPageRoute (builder: (context) =>  SettingsScreen()));
+         Navigator.push(context, MaterialPageRoute (builder: (context) => const SettingsScreen()));
       }),
     },
     {
       'id': 3,
       'title': 'Contact Us',
       'trailing': IconButton(icon: const Icon(Icons.arrow_forward_ios_outlined), onPressed: () {
-         Navigator.push(context, MaterialPageRoute (builder: (context) =>  ContactScreen()));
+         Navigator.push(context, MaterialPageRoute (builder: (context) => const ContactScreen()));
       }),
     },
     {
       'id': 4,
       'title': 'About Penang Smart Parking ',
       'trailing': IconButton(icon: const Icon(Icons.arrow_forward_ios_outlined), onPressed: () {
-         Navigator.push(context, MaterialPageRoute (builder: (context) => AboutPSPScreen()));
+         Navigator.push(context, MaterialPageRoute (builder: (context) => const AboutPSPScreen()));
       }),
     },
   ];
@@ -70,9 +70,7 @@ class ProfileScreen extends StatelessWidget {
                   return Card(
                     shadowColor: Colors.grey.shade300,
                     child: ListTile(
-                      title: Text(
-                        list[index]['title'],
-                      ),
+                      title: Text(list[index]['title'],),
                       trailing: list[index]['trailing'],
                     ),
                   );

@@ -10,8 +10,10 @@ class DetailsChangePIN extends StatelessWidget {
       child: Column( 
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [ 
-          const Text('Phone Number (this phone)', style: TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.bold
+          const Text('Phone Number (this phone)', style: TextStyle(
+            color: Colors.blueAccent, fontWeight: FontWeight.bold
           ),),
+
           const SizedBox(height: 5),
           Row( 
             children: <Widget> [
@@ -41,9 +43,9 @@ class DetailsChangePIN extends StatelessWidget {
                 height: 25, width: 350,
                 child: const Expanded(
                   child: TextField( 
-                    decoration: InputDecoration(hintText: '8 digits old PIN', hintStyle: TextStyle( fontSize: 14),
+                    decoration: InputDecoration(
+                      hintText: '8 digits old PIN', hintStyle: TextStyle( fontSize: 14),
                       border: OutlineInputBorder(),
-                       
                     ),
                   )
                   ),

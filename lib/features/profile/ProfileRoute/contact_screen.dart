@@ -21,7 +21,7 @@ class ContactScreen extends StatelessWidget {
                     },),)
                     ),
         body: Column( 
-          children: const [ 
+          children: [ 
            DetailsContact(),
           ],
         ),

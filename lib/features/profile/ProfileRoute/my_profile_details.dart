@@ -26,11 +26,11 @@ class ProfileDetails extends StatelessWidget {
       body: Column( 
             children:  [ 
              EditNameEmail(),
-             BirthPhoneIC(
+             const BirthPhoneIC(
                dateofbirth: '1999-10-17', 
                phonenumber: '+601127263228', 
                IDnumber: '991017-10-5328'),
-             CancelUpdate(),
+             const CancelUpdate(),
             ],
       ),
     );

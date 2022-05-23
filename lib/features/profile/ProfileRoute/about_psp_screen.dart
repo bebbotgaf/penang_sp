@@ -19,12 +19,13 @@ class AboutPSPScreen extends StatelessWidget {
             icon: const Icon(Icons.arrow_back_ios_new_outlined,
             size: 20, 
             color: Colors.white,),
-            onPressed: () {Navigator.pop(context);
+            onPressed: () {
+              Navigator.pop(context);
         },),)
         ),
         body: Column( 
           children: const [ 
-           DetailsAboutPSP(),
+           AboutPSP(),
           ],
         ),
       ),
