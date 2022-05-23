@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:penang_sp/features/profile/profile_screen.dart';
-import 'package:penang_sp/features/profile/widgets/user_profile.dart';
 
 class Section1 extends StatelessWidget {
   const Section1({ Key? key }) : super(key: key);
@@ -8,7 +7,7 @@ class Section1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(   
+      decoration: const BoxDecoration(   
         image: DecorationImage(image: AssetImage("assets/topbarbg.jpg"),
         fit: BoxFit.cover)
       ),
@@ -17,8 +16,8 @@ class Section1 extends StatelessWidget {
         children: [
           Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.all(15.0),
+              const Padding(
+                padding: EdgeInsets.all(15.0),
                 child: CircleAvatar( 
                   radius: 40.0,
                   backgroundImage: 
@@ -32,11 +31,11 @@ class Section1 extends StatelessWidget {
                 child: GestureDetector(
                       onTap: () { 
                         Navigator.push(
-                          context, MaterialPageRoute (builder: (BuildContext context) => ProfileScreen()));
+                          context, MaterialPageRoute (builder: (BuildContext context) =>  ProfileScreen()));
                       },
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
+                    children: const [
                       CircleAvatar( 
                         radius: 25.0,
                         backgroundImage: 
@@ -58,15 +57,15 @@ class Section1 extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text('eWallet Balance'),
-                Text('RM 0.00', style: TextStyle(fontSize: 20.0)),
+                const Text('eWallet Balance'),
+                const Text('RM 0.00', style: TextStyle(fontSize: 20.0)),
                 Container(    
-                  margin: EdgeInsets.all(15.0),
+                  margin: const EdgeInsets.all(15.0),
                   
                   child: FlatButton( 
                     minWidth: 120.0,   
                     child: 
-                      Text('Reload', style: TextStyle(fontSize: 13.0)),
+                      const Text('Reload', style: TextStyle(fontSize: 13.0)),
                     color: Colors.blueAccent,
                     textColor: Colors.white,
                     onPressed: (){},

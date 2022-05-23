@@ -2,18 +2,31 @@ import 'package:flutter/material.dart';
 
 
 class BirthPhoneIC extends StatelessWidget {
-  const BirthPhoneIC({ Key? key }) : super(key: key);
+
+  final String dateofbirth; 
+  final String phonenumber; 
+  final String IDnumber; 
+
+
+  const BirthPhoneIC ({ 
+    required this.dateofbirth, 
+    required this.phonenumber, 
+    required this.IDnumber, 
+
+  });
+
+  
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(15.0), 
+      padding: const EdgeInsets.all(15.0), 
       child: Column( 
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [ 
-          Text('Date of Birth', style: TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.bold
+          const Text('Date of Birth', style: TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.bold
           ),),
-          SizedBox(height: 5),
+          const SizedBox(height: 15),
           Row( 
             children: <Widget> [
               Container( 
@@ -24,18 +37,18 @@ class BirthPhoneIC extends StatelessWidget {
                   border: Border.all( color: Colors.black)
                 ),
                   child: Padding(
-                    padding: const EdgeInsets.all(3.0),
-                    child: Text('1999-10-17', ),
+                    padding: EdgeInsets.all(3.0),
+                    child: Text(dateofbirth),
                   ),
                 ),
             ],
           ),
 
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
 
-          Text('Phone Number', style: TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.bold
+          const Text('Phone Number', style: TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.bold
           ),),
-          SizedBox(height: 5),
+          const SizedBox(height: 15),
           Row( 
             children: <Widget> [
               Container( 
@@ -46,18 +59,18 @@ class BirthPhoneIC extends StatelessWidget {
                   border: Border.all( color: Colors.black)
                 ),
                   child: Padding(
-                    padding: const EdgeInsets.all(3.0),
-                    child: Text('+601127263228', ),
+                    padding: EdgeInsets.all(3.0),
+                    child: Text(phonenumber),
                   ),
                 ),
             ],
           ),
 
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
 
-          Text('ID Number', style: TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.bold
+          const Text('ID Number', style: TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.bold
           ),),
-          SizedBox(height: 5),
+          const SizedBox(height: 15),
           Row( 
             children: <Widget> [
               Container( 
@@ -68,26 +81,21 @@ class BirthPhoneIC extends StatelessWidget {
                   border: Border.all( color: Colors.black)
                 ),
                   child: Padding(
-                    padding: const EdgeInsets.all(3.0),
-                    child: Text('991017105328', ),
+                    padding: EdgeInsets.all(3.0),
+                    child: Text(IDnumber),
                   ),
                 ),
             ],
           ),
 
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
 
-          Center(
-            child: Text('Please contact customer support if you wish to', textAlign: TextAlign.center,
+          const Center(
+            child: Text('Please contact customer support if you wish to\n change your Date of Birth information', textAlign: TextAlign.center,
             style: TextStyle(
             ),),
           ),
-          Center(child: Text('change your Date of Birth information', textAlign: TextAlign.center)),
-          SizedBox(height: 5),
-          
-
         ],
-        
       ),
     );
   }

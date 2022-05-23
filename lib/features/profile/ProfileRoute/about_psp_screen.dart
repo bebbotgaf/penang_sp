@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:penang_sp/features/profile/widgets/app_bar_psp.dart';
 import 'package:penang_sp/features/profile/widgets/details_aboutPSP.dart';
 
 class AboutPSPScreen extends StatelessWidget {
@@ -10,11 +9,21 @@ class AboutPSPScreen extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false, 
       title: 'About Penang Smart Parking',
-      home: Scaffold(  
-        appBar: 
-        app_bar_aboutPSP(context),
+        home: Scaffold(  
+        appBar: AppBar(backgroundColor: Colors.orange, 
+        title: const Text('About Penang Smart Parking',  
+        style: TextStyle( color: Colors.black, fontWeight: FontWeight.bold)), 
+          centerTitle: true,
+        leading: GestureDetector( 
+          child: IconButton(
+            icon: const Icon(Icons.arrow_back_ios_new_outlined,
+            size: 20, 
+            color: Colors.white,),
+            onPressed: () {Navigator.pop(context);
+        },),)
+        ),
         body: Column( 
-          children: [ 
+          children: const [ 
            DetailsAboutPSP(),
           ],
         ),

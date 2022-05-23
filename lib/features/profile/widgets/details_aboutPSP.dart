@@ -45,10 +45,10 @@ class DetailsAboutPSP extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 15.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text('The app provides two options of language which can' ),
-                        const SizedBox(height: 5),
-                        const Text('be set through menu: Profile > Language Setting' ),
+                      children: const [
+                         Text('The app provides two options of language which can' ),
+                         SizedBox(height: 5),
+                         Text('be set through menu: Profile > Language Setting' ),
                       ],
                     ),
                   ),
@@ -77,7 +77,7 @@ class DetailsAboutPSP extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 15.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
+                      children: const [
                         Text('User can change the eight digit PIN number anytime.' ),
                         SizedBox(height: 5),
                         Text('To change the number: Profile > Change PIN Number ' ),
@@ -108,7 +108,7 @@ class DetailsAboutPSP extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 15.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
+                      children: const [
                         Text('PIN Login is set as optional. It can be set enable' ),
                         SizedBox(height: 5),
                         Text('or disable by setting. To change the setting: Setting > ' ),
@@ -136,7 +136,7 @@ class DetailsAboutPSP extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(left: 15.0),
               child: Column( crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
+                children: const [
                   Text('Parking Receipt will be sent to the registered email'),
                   SizedBox(height: 5),
                   Text('addrress. To get a receipt: History > TAP on the date' ),
@@ -155,8 +155,8 @@ class DetailsAboutPSP extends StatelessWidget {
 
            Column( 
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [ 
-          const Text('Privacy Policy', style: TextStyle(color: Colors.lightBlue, fontWeight: FontWeight.bold
+        children: const [ 
+          Text('Privacy Policy', style: TextStyle(color: Colors.lightBlue, fontWeight: FontWeight.bold
           ),),
             
           
@@ -168,8 +168,8 @@ class DetailsAboutPSP extends StatelessWidget {
 
            Column( 
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [ 
-          const Text('Terms and Conditions', style: TextStyle(color: Colors.lightBlue, fontWeight: FontWeight.bold
+        children: const [ 
+           Text('Terms and Conditions', style: TextStyle(color: Colors.lightBlue, fontWeight: FontWeight.bold
           ),),
             
           

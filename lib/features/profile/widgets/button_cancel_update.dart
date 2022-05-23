@@ -12,7 +12,7 @@ class CancelUpdate extends StatelessWidget {
        ElevatedButton(
       child: Text(
         "Cancel".toUpperCase(),
-        style: TextStyle(fontSize: 14)
+        style: const TextStyle(fontSize: 14)
       ),
       style: ButtonStyle(
         foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
@@ -24,15 +24,15 @@ class CancelUpdate extends StatelessWidget {
           )
         )
       ),
-      onPressed: () => null
+      onPressed: () => {}
       ), 
       
-      SizedBox(width: 10),
+      const SizedBox(width: 10),
       
       ElevatedButton(
       child: Text(
         "Update".toUpperCase(),
-        style: TextStyle(fontSize: 14)
+        style: const TextStyle(fontSize: 14)
       ),
       style: ButtonStyle(
         foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
@@ -44,7 +44,7 @@ class CancelUpdate extends StatelessWidget {
           )
         )
       ),
-      onPressed: () => null
+      onPressed: () => {}
       )
   ]
 ),

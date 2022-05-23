@@ -1,20 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:penang_sp/features/profile/widgets/app_bar_changePIN.dart';
 import 'package:penang_sp/features/profile/widgets/details_changePIN.dart';
 
-class ChangePIN extends StatelessWidget {
-  const ChangePIN({ Key? key }) : super(key: key);
+class ChangePINScreen extends StatelessWidget {
+  const ChangePINScreen ({ Key? key }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, { String title = ''}) { 
     return MaterialApp(
       debugShowCheckedModeBanner: false, 
       title: 'Change PIN',
       home: Scaffold(  
-        appBar: 
-        app_bar_changePIN(context),
+        appBar:AppBar( 
+          backgroundColor: Colors.orange, 
+          title: const Text('Change PIN',  
+            style: TextStyle( color: Colors.black, fontWeight: FontWeight.bold)), 
+            centerTitle: true,
+          leading: GestureDetector( 
+              child: IconButton(
+              icon: const Icon(Icons.arrow_back_ios_new_outlined,
+              size: 20, 
+              color: Colors.white,),
+              onPressed: () {Navigator.pop(context);
+          },),)
+          ),
         body: Column( 
-          children: [ 
+          children: const [ 
            DetailsChangePIN(),
           ],
         ),

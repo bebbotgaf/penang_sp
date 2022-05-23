@@ -6,80 +6,80 @@ class DetailsContact extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(15.0),
+      padding: const EdgeInsets.all(15.0),
       child: Column( 
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [ 
           Image.asset('hotline.png'),
-          SizedBox(height: 20.0),
+          const SizedBox(height: 20.0),
           Row( 
-            children: [ 
+            children: const [ 
               Icon(Icons.phone),
               SizedBox(width: 10),
               Text('Helpdesk:')
             ],
           ), 
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
 
           Container(
-            margin: EdgeInsets.only(left: 35.0),
+            margin: const EdgeInsets.only(left: 35.0),
             child: Column( 
               crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [ 
+              children: const [ 
                 Text('1-700-818-113', style: TextStyle( color: Colors.blueAccent),),
                 SizedBox(height: 5),
                 Text('+(603) 80268128', style: TextStyle( color: Colors.blueAccent),),
               ],
             ),
           ), 
-          Divider(
+          const Divider(
             thickness: 1,
             color: Color.fromARGB(255, 207, 206, 206)),
 
         Row( 
-            children: [ 
+            children: const[ 
               Icon(Icons.email),
               SizedBox(width: 10),
               Text('Email:')
             ],
           ), 
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
 
           Container(
-            margin: EdgeInsets.only(left: 35.0),
+            margin: const EdgeInsets.only(left: 35.0),
             child: Column( 
               crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [ 
+              children: const [ 
                 Text('support_psp@htpsmartsolution.com.my', style: TextStyle( color: Colors.blueAccent, decoration: TextDecoration.underline),),
               ],
             ),
           ), 
 
-          Divider(
+          const Divider(
             thickness: 1,
             color: Color.fromARGB(255, 207, 206, 206)),
 
                       Row( 
-            children: [ 
+            children: const [ 
               Icon(Icons.watch_later),
               SizedBox(width: 10),
               Text('Operation Hours:')
             ],
           ), 
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
 
           Container(
-            margin: EdgeInsets.only(left: 35.0),
+            margin: const EdgeInsets.only(left: 35.0),
             child: Column( 
               crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [ 
+              children: const [ 
                 Text('(Monday - Saturday )'),
                 SizedBox(height: 5),
                 Text('8.00 am to 6.00 pm'),
               ],
             ),
           ), 
-          Divider(
+          const Divider(
             thickness: 1,
             color: Color.fromARGB(255, 207, 206, 206)),
         ],

@@ -6,28 +6,28 @@ class DetailsSettings extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(15.0),
+      padding: const EdgeInsets.all(15.0),
       child: Column(
         children: [
           Row( 
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                Text('Language Setting', 
+                const Text('Language Setting', 
                 style: TextStyle( fontWeight: FontWeight.bold),),
                 Row(
-                  children: [
+                  children: const [
                     Text('ENG', style: TextStyle(fontWeight: FontWeight.bold),),
                     Text('/ BM'), 
                   ],
                 ), 
                 ],
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
 
               Row( 
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                Text('Enable PIN (Login Option)', 
+                const Text('Enable PIN (Login Option)', 
                 style: TextStyle( fontWeight: FontWeight.bold),),
                 SwitchScreen(), 
                 ],
@@ -38,9 +38,12 @@ class DetailsSettings extends StatelessWidget {
   }
 }
 
+
 class SwitchScreen extends StatefulWidget {  
+  const SwitchScreen({ Key? key }) : super(key: key);
+  
   @override  
-  SwitchClass createState() => new SwitchClass();  
+  SwitchClass createState() => SwitchClass();  
 }  
   
 class SwitchClass extends State {  
@@ -70,10 +73,10 @@ class SwitchClass extends State {
             child: Switch(  
               onChanged: toggleSwitch,  
               value: isSwitched,  
-              activeColor: Color.fromARGB(255, 79, 84, 88),  
-              activeTrackColor: Color.fromARGB(255, 190, 190, 184),  
-              inactiveThumbColor: Color.fromARGB(255, 79, 84, 88),  
-              inactiveTrackColor: Color.fromARGB(255, 190, 190, 184),  
+              activeColor: const Color.fromARGB(255, 79, 84, 88),  
+              activeTrackColor: const Color.fromARGB(255, 190, 190, 184),  
+              inactiveThumbColor: const Color.fromARGB(255, 79, 84, 88),  
+              inactiveTrackColor: const Color.fromARGB(255, 190, 190, 184),  
             )  
           ),  
         ]);  

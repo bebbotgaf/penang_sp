@@ -13,7 +13,7 @@ class Section2 extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Column(
-                children: [
+                children: const [
                   CircleAvatar(
                     radius: 25.0,
                     backgroundImage: AssetImage("assets/compound.png"),
@@ -23,7 +23,7 @@ class Section2 extends StatelessWidget {
                 ],
               ),
               Column(
-                children: [
+                children: const [
                   CircleAvatar(
                     radius: 25.0,
                     backgroundImage: AssetImage("assets/compound.png"),
@@ -33,7 +33,7 @@ class Section2 extends StatelessWidget {
                 ],
               ),
               Column(
-                children: [
+                children: const [
                   CircleAvatar(
                     radius: 25.0,
                     backgroundImage: AssetImage("assets/compound.png"),
@@ -43,7 +43,7 @@ class Section2 extends StatelessWidget {
                 ],
               ),
               Column(
-                children: [
+                children: const [
                   CircleAvatar(
                     radius: 25.0,
                     backgroundImage: AssetImage("assets/compound.png"),
@@ -55,8 +55,8 @@ class Section2 extends StatelessWidget {
             ],
           ),
         ),
-        Padding(
-           padding: const EdgeInsets.all(10.0),
+        const Padding(
+           padding: EdgeInsets.all(10.0),
           child: Divider(
             thickness: 2,
             indent: 15,
@@ -68,7 +68,7 @@ class Section2 extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Column(
-                children: [
+                children: const [
                   CircleAvatar(
                     radius: 25.0,
                     backgroundImage: AssetImage("assets/compound.png"),
@@ -79,7 +79,7 @@ class Section2 extends StatelessWidget {
                 ],
               ),
               Column(
-                children: [
+                children:const [
                   CircleAvatar(
                     radius: 25.0,
                     backgroundImage: AssetImage("assets/compound.png"),
@@ -90,7 +90,7 @@ class Section2 extends StatelessWidget {
                 ],
               ),
               Column(
-                children: [
+                children: const [
                   CircleAvatar(
                     radius: 25.0,
                     backgroundImage: AssetImage("assets/compound.png"),
@@ -101,7 +101,7 @@ class Section2 extends StatelessWidget {
                 ],
               ),
               Column(
-                children: [
+                children: const [
                   CircleAvatar(
                     radius: 25.0,
                     backgroundImage: AssetImage("assets/compound.png"),
@@ -114,8 +114,8 @@ class Section2 extends StatelessWidget {
             ],
           ),
 
-          Padding(
-            padding: const EdgeInsets.all(10.0),
+          const Padding(
+            padding: EdgeInsets.all(10.0),
             child: Divider(
               thickness: 2,
               indent: 15,
@@ -126,9 +126,9 @@ class Section2 extends StatelessWidget {
            Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              SizedBox(width: 38,),
+              const SizedBox(width: 38,),
               Column(
-                children: [
+                children: const [
                   CircleAvatar(
                     radius: 25.0,
                     backgroundImage: AssetImage("assets/compound.png"),

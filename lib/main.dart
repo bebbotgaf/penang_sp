@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:penang_sp/features/home/home_screen.dart';
+import 'package:penang_sp/app.dart';
 
 void main() {
-  runApp(HomeScreen());
+  runApp(const MyApp());
 }

@@ -15,7 +15,7 @@ class Section3 extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [  
+              children: const [  
                 Text('Highlight & Promotion'),
                 Text('>>More', style: TextStyle(color: Colors.blue, fontSize: 13))
               ],
@@ -33,10 +33,10 @@ class Section3 extends StatelessWidget {
                   child: Container(
                     width: 350,
                     decoration: BoxDecoration(     
-                     image: DecorationImage(image: AssetImage("ramadhan.png"),
+                     image: const DecorationImage(image: AssetImage("penang_sp/assets/ramadhan.png"),
                      fit: BoxFit.fill),
-                      border: Border.all(color: Color.fromARGB(255, 77, 155, 197) , width: 5),
-                     borderRadius: BorderRadius.all(Radius.circular(20))
+                      border: Border.all(color: const Color.fromARGB(255, 77, 155, 197) , width: 5),
+                     borderRadius: const BorderRadius.all(Radius.circular(20))
                   ),
                   ),
                 ), 
@@ -45,10 +45,11 @@ class Section3 extends StatelessWidget {
                   child: Container(
                     width: 350,
                     decoration: BoxDecoration(     
-                     image: DecorationImage(image: AssetImage("penang.webp"),
+                     image: const DecorationImage(
+                       image: AssetImage("penang_sp/assets/penang.png"),
                      fit: BoxFit.fill),
-                      border: Border.all(color: Color.fromARGB(255, 77, 155, 197) , width: 5),
-                     borderRadius: BorderRadius.all(Radius.circular(20))
+                      border: Border.all(color: const Color.fromARGB(255, 77, 155, 197) , width: 5),
+                     borderRadius: const BorderRadius.all(Radius.circular(20))
                   ),
                   ),
                 ),  
@@ -57,10 +58,10 @@ class Section3 extends StatelessWidget {
                   child: Container(
                     width: 350,
                     decoration: BoxDecoration(     
-                     image: DecorationImage(image: AssetImage("kuih.webp"),
+                     image: const DecorationImage(image: AssetImage("penang_sp/assets/kuih.png"),
                      fit: BoxFit.fill),
-                      border: Border.all(color: Color.fromARGB(255, 77, 155, 197) , width: 5),
-                     borderRadius: BorderRadius.all(Radius.circular(20))
+                      border: Border.all(color: const Color.fromARGB(255, 77, 155, 197) , width: 5),
+                     borderRadius: const BorderRadius.all(Radius.circular(20))
                   ),
                   ),
                 ),  
@@ -69,10 +70,10 @@ class Section3 extends StatelessWidget {
                   child: Container(
                     width: 350,
                     decoration: BoxDecoration(     
-                     image: DecorationImage(image: AssetImage("kl.jpg"),
+                     image: const DecorationImage(image: AssetImage("penang_sp/assets/kl.jpg"),
                      fit: BoxFit.fill),
-                      border: Border.all(color: Color.fromARGB(255, 77, 155, 197) , width: 5),
-                     borderRadius: BorderRadius.all(Radius.circular(20))
+                      border: Border.all(color: const Color.fromARGB(255, 77, 155, 197) , width: 5),
+                     borderRadius: const BorderRadius.all(Radius.circular(20))
                   ),
                   ),
                 ),  

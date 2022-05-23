@@ -6,13 +6,13 @@ class DetailsChangePIN extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: EdgeInsets.all(15.0), 
+        padding: const EdgeInsets.all(15.0), 
       child: Column( 
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [ 
-          Text('Phone Number (this phone)', style: TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.bold
+          const Text('Phone Number (this phone)', style: TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.bold
           ),),
-          SizedBox(height: 5),
+          const SizedBox(height: 5),
           Row( 
             children: <Widget> [
               Container( 
@@ -22,24 +22,24 @@ class DetailsChangePIN extends StatelessWidget {
                   borderRadius: BorderRadius.circular(5.0), 
                   border: Border.all( color: Colors.black)
                 ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(4.0),
+                  child: const Padding(
+                    padding: EdgeInsets.all(4.0),
                     child: Text('+601127263228', ),
                   ),
                 ),
             ],
           ),
-          SizedBox(height: 10), 
+          const SizedBox(height: 10), 
 
-          Text('Old PIN Number ', style: TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.bold
+          const Text('Old PIN Number ', style: TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.bold
           ),),
 
-          SizedBox(height: 5),
+          const SizedBox(height: 15),
           Row( 
             children: <Widget> [
               Container(
                 height: 25, width: 350,
-                child: Expanded(
+                child: const Expanded(
                   child: TextField( 
                     decoration: InputDecoration(hintText: '8 digits old PIN', hintStyle: TextStyle( fontSize: 14),
                       border: OutlineInputBorder(),
@@ -53,17 +53,17 @@ class DetailsChangePIN extends StatelessWidget {
           
          ),
 
-         SizedBox(height: 10), 
+         const SizedBox(height: 10), 
 
-          Text('New PIN Number ', style: TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.bold
+          const Text('New PIN Number ', style: TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.bold
           ),),
 
-          SizedBox(height: 5),
+          const SizedBox(height: 15),
           Row( 
             children: <Widget> [
               Container(
                 height: 25, width: 350,
-                child: Expanded(
+                child: const Expanded(
                   child: TextField( 
                     decoration: InputDecoration(hintText: '8 digits PIN', hintStyle: TextStyle( fontSize: 14),
                       border: OutlineInputBorder(),
@@ -76,17 +76,17 @@ class DetailsChangePIN extends StatelessWidget {
         ], 
           
          ),
-         SizedBox(height: 10), 
+         const SizedBox(height: 10), 
 
-          Text('Confirm New PIN Number ', style: TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.bold
+          const Text('Confirm New PIN Number ', style: TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.bold
           ),),
 
-          SizedBox(height: 5),
+          const SizedBox(height: 15),
           Row( 
             children: <Widget> [
               Container(
                 height: 25, width: 350,
-                child: Expanded(
+                child: const Expanded(
                   child: TextField( 
                     decoration: InputDecoration(hintText: '8 digits PIN', hintStyle: TextStyle( fontSize: 14),
                       border: OutlineInputBorder(),
@@ -97,7 +97,7 @@ class DetailsChangePIN extends StatelessWidget {
               ),
         ], 
          ),
-         SizedBox(height: 25), 
+         const SizedBox(height: 25), 
 
          Center(
            child: SizedBox( 
@@ -107,11 +107,11 @@ class DetailsChangePIN extends StatelessWidget {
               shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                   RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(18.0),
-                      side: BorderSide(),
+                      side: const BorderSide(),
                   ),
               ),
                  ),
-                 child: Text('OK'),
+                 child: const Text('OK'),
                  onPressed: () {},
            ),
            ),
