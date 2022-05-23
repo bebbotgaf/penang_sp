@@ -33,7 +33,7 @@ class Section3 extends StatelessWidget {
                   child: Container(
                     width: 350,
                     decoration: BoxDecoration(     
-                     image: const DecorationImage(image: AssetImage("penang_sp/assets/ramadhan.png"),
+                     image: const DecorationImage(image: AssetImage("assets/ramadhan.png"),
                      fit: BoxFit.fill),
                       border: Border.all(color: const Color.fromARGB(255, 77, 155, 197) , width: 5),
                      borderRadius: const BorderRadius.all(Radius.circular(20))
@@ -46,7 +46,7 @@ class Section3 extends StatelessWidget {
                     width: 350,
                     decoration: BoxDecoration(     
                      image: const DecorationImage(
-                       image: AssetImage("penang_sp/assets/penang.png"),
+                       image: AssetImage("assets/penang.png"),
                      fit: BoxFit.fill),
                       border: Border.all(color: const Color.fromARGB(255, 77, 155, 197) , width: 5),
                      borderRadius: const BorderRadius.all(Radius.circular(20))
@@ -58,7 +58,7 @@ class Section3 extends StatelessWidget {
                   child: Container(
                     width: 350,
                     decoration: BoxDecoration(     
-                     image: const DecorationImage(image: AssetImage("penang_sp/assets/kuih.png"),
+                     image: const DecorationImage(image: AssetImage("assets/kuih.png"),
                      fit: BoxFit.fill),
                       border: Border.all(color: const Color.fromARGB(255, 77, 155, 197) , width: 5),
                      borderRadius: const BorderRadius.all(Radius.circular(20))
@@ -70,7 +70,7 @@ class Section3 extends StatelessWidget {
                   child: Container(
                     width: 350,
                     decoration: BoxDecoration(     
-                     image: const DecorationImage(image: AssetImage("penang_sp/assets/kl.jpg"),
+                     image: const DecorationImage(image: AssetImage("assets/kl.jpg"),
                      fit: BoxFit.fill),
                       border: Border.all(color: const Color.fromARGB(255, 77, 155, 197) , width: 5),
                      borderRadius: const BorderRadius.all(Radius.circular(20))
